@@ -1,0 +1,264 @@
+/* Copyright 2015 Michael Bostock. All rights reserved. Do not copy. */
+
+@import url(//fonts.googleapis.com/css?family=PT+Serif|PT+Serif:b|PT+Serif:i|PT+Sans|PT+Sans:b);
+
+.ocks-org body {
+  background: #fcfcfa;
+  color: #333;
+  font-family: "PT Serif", serif;
+  font-size: 16px;
+  line-height: 1.2em;
+  margin: 1em auto 4em auto;
+  max-width: 720px;
+  padding: 0 18px;
+  position: relative;
+}
+
+.ocks-org header,
+.ocks-org footer,
+.ocks-org h1,
+.ocks-org h2,
+.ocks-org h3,
+.ocks-org h4 {
+  font-family: "PT Sans", sans-serif;
+}
+
+.ocks-org h1,
+.ocks-org h2,
+.ocks-org h3,
+.ocks-org h4 {
+  color: #000;
+}
+
+.ocks-org header,
+.ocks-org footer {
+  color: #636363;
+}
+
+h1 {
+  font-size: 64px;
+  font-weight: 300;
+  letter-spacing: -2px;
+  line-height: 1em;
+  margin: .5em 0;
+}
+
+h2 {
+  margin-top: 2em;
+}
+
+h1,
+h2 {
+  text-rendering: optimizeLegibility;
+}
+
+h2 a[name],
+h2 a[id] {
+  color: #999;
+  right: 100%;
+  margin-right: -8px;
+  position: absolute;
+}
+
+header,
+footer {
+  font-size: small;
+}
+
+footer {
+  margin-top: 8em;
+}
+
+.attribution {
+  font-size: small;
+  margin-bottom: 2em;
+}
+
+body > p,
+body > aside,
+body > blockquote,
+li > p {
+  line-height: 1.5em;
+}
+
+body > p,
+body > ul,
+body > aside,
+body > blockquote {
+  max-width: 720px;
+}
+
+body > p.figure {
+  max-width: 1000px;
+}
+
+body > aside > p:last-child {
+  margin-bottom: 0;
+}
+
+body > blockquote {
+  margin: 18px 0;
+}
+
+blockquote q {
+  font-style: oblique;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  margin-left: 0;
+}
+
+a {
+  color: steelblue;
+}
+
+a:not(:hover) {
+  text-decoration: none;
+}
+
+pre,
+code,
+textarea {
+  font-family: "Menlo", monospace;
+}
+
+code {
+  line-height: 1em;
+}
+
+textarea {
+  font-size: 100%;
+}
+
+body > pre {
+  border-left: solid 2px #999;
+  padding-left: 16px;
+  margin: 2em 0 2em -18px;
+  overflow-x: scroll;
+}
+
+.html .value,
+.javascript .string,
+.javascript .regexp {
+  color: #756bb1;
+}
+
+.html .tag,
+.css .tag,
+.javascript .keyword {
+  color: #3182bd;
+}
+
+.comment {
+  color: #636363;
+}
+
+.html .doctype,
+.javascript .number {
+  color: #31a354;
+}
+
+.html .attribute,
+.css .attribute,
+.javascript .class,
+.javascript .special {
+  color: #e6550d;
+}
+
+svg {
+  font: 10px sans-serif;
+}
+
+.axis path, .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+sup, sub {
+  line-height: 0;
+}
+
+q:before {
+  content: "â€œ";
+}
+
+q:after {
+  content: "â€";
+}
+
+blockquote q {
+  line-height: 1.5em;
+  display: inline;
+}
+
+blockquote q:before,
+blockquote q:after {
+  content: "";
+}
+
+.note {
+  box-shadow: 0 8px 16px rgba(204,204,119,0.4);
+  background: #ffa;
+  border-bottom: solid 1px rgba(204,204,119,0.6);
+  padding: 18px;
+  margin: 2em -18px 0 -18px;
+}
+
+@media (min-width: 761px) {
+  h2 a[name],
+  h2 a[id] {
+    color: #ccc;
+  }
+
+  body > pre {
+    border-left-color: #ccc;
+  }
+}
+
+@media (max-width: 999px) {
+  body > aside {
+    margin-top: auto !important;
+  }
+}
+
+@media (min-width: 1000px) {
+  .ocks-org aside,
+  .inset {
+    font-size: 13px;
+    font-family: "PT Sans", sans-serif;
+    line-height: inherit;
+  }
+
+  .ocks-org body {
+    max-width: 962px;
+  }
+
+  .ocks-org header aside,
+  .ocks-org footer aside {
+    float: left;
+    margin-right: .5em;
+  }
+
+  .ocks-org header aside:after,
+  .ocks-org footer aside:after {
+    padding-left: .5em;
+    content: "/";
+  }
+
+  h1 ~ aside {
+    font-size: small;
+    right: 0;
+    position: absolute;
+    width: 180px;
+  }
+
+  .inset {
+    float: right;
+    margin: 0 0 0 2em;
+  }
+}
